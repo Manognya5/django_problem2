@@ -1,0 +1,52 @@
+go to venv
+- pip install django
+- django-admin startproject central
+
+- python manage.py startapp central_inventory      
+#application, project and folder should have different names
+
+- To run the server:
+python manage.py runserver 
+python manage.py runserver portnum -> if there is a port in use error
+
+Warning:
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+
+- Should create the entity and models to avoid the warning
+- add app in settings.py
+- python manage.py makemigrations -> creates file for sql commands
+- python manage.py migrate 
+
+- python manage.py createsuperuser
+#admin, pswd: admin@123
+- edit admin.py
+- python manage.py applymigrations -> executes sql commands
+
+
+SHIFT+OPTION+I => to add in every line
+
+import pdb
+pdb.stack_trace to debug
+
+#see model serialiser, serialisers in django-rest-framework
+
+=> step 1: create functs in serialiser class
+=> call them in views.py
+
+- delete the migration folder and then applymigrations and migrate (or)
+fake the initial  migrations
+
+
+{
+        "site_id": 3,
+        "created_at": "2023-02-10T06:59:52.670587Z",
+        "updated_at": "2023-02-10T06:59:52.670652Z",
+        "site_name": "Site3",
+        "address": "Hyderabad",
+        "state": "Telangana",
+        "country": "India",
+        "zipcode": 500050
+    }
+
+
