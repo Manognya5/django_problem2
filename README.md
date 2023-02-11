@@ -10,6 +10,6 @@ Team members:
 - Sindhuja
 - Logeshwari
 - Kartikeya
-- Subhashree
+- Subhasri
 - Manognya
 - Aastha
